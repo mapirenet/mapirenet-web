@@ -374,6 +374,16 @@ navPanel.querySelectorAll("a").forEach((link) => {
   });
 });
 
+const projectsLink = document.querySelector('[data-i18n="navProjects"]');
+if (projectsLink) {
+  projectsLink.addEventListener("click", (event) => {
+    if (projectsLink.getAttribute("href") === "projects/") {
+      event.preventDefault();
+      window.location.href = projectsLink.href;
+    }
+  });
+}
+
 const canvas = document.querySelector("#technicalCanvas");
 const ctx = canvas ? canvas.getContext("2d") : null;
 let animationFrame = 0;
