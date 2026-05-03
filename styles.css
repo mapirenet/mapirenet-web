@@ -569,6 +569,18 @@ h3 {
   background: #eef3f7;
 }
 
+#animaciones .video-grid {
+  width: min(460px, calc(100% - 40px));
+  max-width: 460px;
+  grid-template-columns: 1fr;
+}
+
+#animaciones .video-frame {
+  height: 220px;
+  max-height: 220px;
+  aspect-ratio: auto;
+}
+
 .section-cta {
   margin-top: 26px;
 }
