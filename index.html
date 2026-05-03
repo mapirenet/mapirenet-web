@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inventando Soluções ofrece servicios técnicos para diseño mecánico, CAD, SolidWorks, documentación técnica para fabricación, máquinas industriales y automatización para Brasil, España y Europa.">
+  <title>Inventando Soluções | Diseño mecánico, CAD, SolidWorks y automatización técnica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#top" aria-label="Inventando Soluções inicio">
+        <span class="brand-mark" aria-hidden="true">IS</span>
+        <span>
+          <strong>Inventando Soluções</strong>
+          <small data-i18n="brandTag">Servicios técnicos para diseño, CAD y automatización</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <a href="#servicios" data-i18n="navServices">Servicios</a>
+        <a href="#proceso" data-i18n="navProcess">Proceso</a>
+        <a href="#proyectos" data-i18n="navProjects">Aplicaciones</a>
+        <a href="#tecnologias" data-i18n="navTech">Tecnologías</a>
+        <a href="#sobre-mi" data-i18n="navAbout">Empresa</a>
+        <a href="#contacto" data-i18n="navContact">Contacto</a>
+      </div>
+
+      <div class="language-switcher" aria-label="Selector de idioma">
+        <button class="lang-button active" type="button" data-lang="es">ES</button>
+        <button class="lang-button" type="button" data-lang="en">EN</button>
+        <button class="lang-button" type="button" data-lang="pt">PT</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero principal con visual técnico generado en canvas, sin imágenes externas. -->
+    <section class="hero section-band">
+      <canvas class="hero-canvas" id="technicalCanvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">España · Europa · Brasil</p>
+          <h1 data-i18n="heroTitle">Inventando Soluções</h1>
+          <p class="hero-copy" data-i18n="heroCopy">Servicios técnicos para diseño mecánico, CAD y SolidWorks, modelado 3D, documentación técnica para fabricación, soporte a máquinas industriales y automatización con Python, sensores y sistemas conectados.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contacto" data-i18n="heroPrimary">Solicitar consulta</a>
+            <a class="button secondary" href="#proyectos" data-i18n="heroSecondary">Ver aplicaciones</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Resumen técnico">
+          <div>
+            <span data-i18n="heroPanelTop">Especialidad</span>
+            <strong data-i18n="heroPanelTitle">Soporte técnico remoto para empresas industriales</strong>
+          </div>
+          <dl class="metric-list">
+            <div>
+              <dt data-i18n="metricOne">CAD</dt>
+              <dd>SolidWorks</dd>
+            </div>
+            <div>
+              <dt data-i18n="metricTwo">Código</dt>
+              <dd>Python</dd>
+            </div>
+            <div>
+              <dt data-i18n="metricThree">Control</dt>
+              <dd>ESPHome</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Franja breve de capacidades para reforzar confianza antes de los servicios. -->
+    <section class="intro-strip">
+      <div class="container strip-grid">
+        <span data-i18n="stripOne">Modelos paramétricos editables</span>
+        <span data-i18n="stripTwo">Planos listos para fabricación</span>
+        <span data-i18n="stripThree">Automatización CAD y técnica</span>
+        <span data-i18n="stripFour">Menos retrabajo técnico</span>
+      </div>
+    </section>
+
+    <!-- Servicios comerciales principales. -->
+    <section class="section-band" id="servicios">
+      <div class="container section-heading">
+        <p class="eyebrow" data-i18n="servicesEyebrow">Servicios</p>
+        <h2 data-i18n="servicesTitle">Servicios técnicos para diseño mecánico, CAD, fabricación y automatización.</h2>
+      </div>
+      <div class="container service-grid">
+        <article class="service-card">
+          <span class="icon-box" aria-hidden="true">01</span>
+          <h3 data-i18n="serviceOneTitle">Diseño mecánico fabricable en SolidWorks</h3>
+          <p data-i18n="serviceOneText">Piezas, ensamblajes y modelos paramétricos pensados para fabricación, mantenimiento y futuras modificaciones.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon-box" aria-hidden="true">02</span>
+          <h3 data-i18n="serviceTwoTitle">Maquinaria agrícola e industrial</h3>
+          <p data-i18n="serviceTwoText">Desarrollo de mecanismos, estructuras y subconjuntos para equipos de trabajo exigente en campo, taller o planta.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon-box" aria-hidden="true">03</span>
+          <h3 data-i18n="serviceThreeTitle">Planos de fabricación y documentación técnica</h3>
+          <p data-i18n="serviceThreeText">Detalles, tolerancias, vistas de montaje, listas de materiales y paquetes técnicos claros para taller y proveedores.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon-box" aria-hidden="true">04</span>
+          <h3 data-i18n="serviceFourTitle">Automatización CAD y técnica con Python</h3>
+          <p data-i18n="serviceFourText">Scripts, plantillas y flujos de trabajo para automatizar tareas repetitivas, generar datos y mejorar consistencia técnica.</p>
+        </article>
+        <article class="service-card service-wide">
+          <span class="icon-box" aria-hidden="true">05</span>
+          <h3 data-i18n="serviceFiveTitle">Revisión, mejora y reducción de retrabajo</h3>
+          <p data-i18n="serviceFiveText">Análisis de diseños existentes, mejora de fabricabilidad, estandarización de archivos y soporte técnico para decisiones de diseño y producción.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-band process-band" id="proceso">
+      <div class="container section-heading">
+        <p class="eyebrow" data-i18n="processEyebrow">Cómo trabajamos</p>
+        <h2 data-i18n="processTitle">Un flujo claro para transformar problemas técnicos en entregables útiles.</h2>
+      </div>
+      <div class="container process-grid">
+        <article class="process-step">
+          <span>01</span>
+          <h3 data-i18n="processOneTitle">Análisis del problema técnico</h3>
+          <p data-i18n="processOneText">Revisión de objetivos, restricciones, información disponible y prioridad del trabajo.</p>
+        </article>
+        <article class="process-step">
+          <span>02</span>
+          <h3 data-i18n="processTwoTitle">Modelado o revisión CAD</h3>
+          <p data-i18n="processTwoText">Creación, ajuste o validación de piezas, ensamblajes y modelos paramétricos.</p>
+        </article>
+        <article class="process-step">
+          <span>03</span>
+          <h3 data-i18n="processThreeTitle">Documentación para fabricación</h3>
+          <p data-i18n="processThreeText">Preparación de planos, detalles, listas de materiales y criterios para taller o proveedor.</p>
+        </article>
+        <article class="process-step">
+          <span>04</span>
+          <h3 data-i18n="processFourTitle">Automatización o mejora del flujo</h3>
+          <p data-i18n="processFourText">Identificación de tareas repetitivas y creación de scripts, plantillas o procesos más consistentes.</p>
+        </article>
+        <article class="process-step">
+          <span>05</span>
+          <h3 data-i18n="processFiveTitle">Entrega y soporte remoto</h3>
+          <p data-i18n="processFiveText">Entrega organizada de archivos, documentación y soporte remoto para implementación o revisión.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-band benefits-band" id="beneficios">
+      <div class="container benefits-layout">
+        <div class="section-heading left">
+          <p class="eyebrow" data-i18n="benefitsEyebrow">Beneficios</p>
+          <h2 data-i18n="benefitsTitle">Soporte técnico pensado para equipos que necesitan avanzar con claridad.</h2>
+        </div>
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <span aria-hidden="true"></span>
+            <p data-i18n="benefitOne">Reducción de retrabajo en diseño, documentación y revisión técnica.</p>
+          </div>
+          <div class="benefit-item">
+            <span aria-hidden="true"></span>
+            <p data-i18n="benefitTwo">Documentación más clara para fabricación, montaje y proveedores.</p>
+          </div>
+          <div class="benefit-item">
+            <span aria-hidden="true"></span>
+            <p data-i18n="benefitThree">Modelos CAD editables, organizados y preparados para cambios futuros.</p>
+          </div>
+          <div class="benefit-item">
+            <span aria-hidden="true"></span>
+            <p data-i18n="benefitFour">Mejor comunicación con taller, proveedor o equipo técnico interno.</p>
+          </div>
+          <div class="benefit-item">
+            <span aria-hidden="true"></span>
+            <p data-i18n="benefitFive">Soporte remoto para empresas en Brasil, España y Europa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aplicaciones técnicas sin exponer datos sensibles ni contacto inventado. -->
+    <section class="section-band projects-band" id="proyectos">
+      <div class="container section-heading">
+        <p class="eyebrow" data-i18n="projectsEyebrow">Aplicaciones técnicas</p>
+        <h2 data-i18n="projectsTitle">Experiencia aplicada en equipos fabricables, soporte a máquinas y automatización técnica.</h2>
+      </div>
+      <div class="container project-list">
+        <article class="project-item">
+          <span data-i18n="projectOneLabel">Maquinaria agrícola</span>
+          <h3 data-i18n="projectOneTitle">Sistema mecanizado de plantío agrícola</h3>
+          <p data-i18n="projectOneText">Experiencia en cosechadoras de semilla y plantadoras de caña de azúcar, con foco en operación agrícola, robustez estructural y producción en campo.</p>
+          <details class="project-details">
+            <summary data-i18n="projectDetailsToggle">Ver detalles</summary>
+            <ul>
+              <li data-i18n="projectOneDetailOne">Diseño y desarrollo de cosechadoras de semilla para caña de azúcar.</li>
+              <li data-i18n="projectOneDetailTwo">Diseño de plantadoras de caña de azúcar orientadas a operación mecanizada.</li>
+              <li data-i18n="projectOneDetailThree">Trabajo técnico en mecanismos, estructura, fabricación y mantenimiento.</li>
+            </ul>
+          </details>
+        </article>
+        <article class="project-item">
+          <span data-i18n="projectTwoLabel">Maquinaria forestal</span>
+          <h3 data-i18n="projectTwoTitle">Plantadora de floresta</h3>
+          <p data-i18n="projectTwoText">Desarrollo funcional de plantadoras de floresta, con foco en cinemática, estructura, adaptación al terreno y validación práctica.</p>
+          <details class="project-details">
+            <summary data-i18n="projectDetailsToggle">Ver detalles</summary>
+            <ul>
+              <li data-i18n="projectTwoDetailOne">Diseño funcional de plantadoras de floresta de autoría propia.</li>
+              <li data-i18n="projectTwoDetailTwo">Experiencia destacada en cobertura periodística de Globo Rural.</li>
+              <li data-i18n="projectTwoDetailThree">Desarrollo mencionado en reportaje internacional de televisión china, junto con otras coberturas técnicas y periodísticas.</li>
+            </ul>
+          </details>
+        </article>
+        <article class="project-item">
+          <span data-i18n="projectThreeLabel">Estructuras mecánicas</span>
+          <h3 data-i18n="projectThreeTitle">Plataforma mecánica de gran porte</h3>
+          <p data-i18n="projectThreeText">Diseño de bases y estructuras para equipos de gran escala, priorizando estabilidad, interfaces, fabricación y mantenimiento.</p>
+        </article>
+        <article class="project-item">
+          <span data-i18n="projectFourLabel">Sistemas conectados</span>
+          <h3 data-i18n="projectFourTitle">Automatización con sensores y sistemas conectados</h3>
+          <p data-i18n="projectFourText">Integración de sensores, controladores y paneles conectados para supervisión técnica, registro de datos y mejora de procesos.</p>
+        </article>
+        <article class="project-item">
+          <span data-i18n="projectFiveLabel">Análisis visual</span>
+          <h3 data-i18n="projectFiveTitle">Visión técnica y análisis visual</h3>
+          <p data-i18n="projectFiveText">Herramientas con Python para inspección, detección, medición y análisis visual aplicadas a problemas técnicos reales.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-band" id="tecnologias">
+      <div class="container tech-layout">
+        <div class="section-heading left">
+          <p class="eyebrow" data-i18n="techEyebrow">Tecnologías y flujos</p>
+          <h2 data-i18n="techTitle">Un puente práctico entre CAD, fabricación y automatización.</h2>
+          <p data-i18n="techText">Trabajo con herramientas de diseño, documentación y programación para convertir necesidades técnicas en modelos editables, planos claros y procesos repetibles.</p>
+        </div>
+        <div class="tech-cloud" aria-label="Tecnologías principales">
+          <span>SolidWorks</span>
+          <span>CAD 3D</span>
+          <span data-i18n="techLabelDrawings">Planos fabricables</span>
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span data-i18n="techLabelAutomation">Automatización CAD</span>
+          <span data-i18n="techLabelBom">Listas de materiales</span>
+          <span>ESPHome</span>
+          <span>Home Assistant</span>
+          <span>Sensores</span>
+          <span data-i18n="techLabelWorkflow">Flujos de trabajo</span>
+          <span data-i18n="techLabelDocs">Documentación técnica</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band about-band" id="sobre-mi">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow" data-i18n="aboutEyebrow">Empresa</p>
+          <h2 data-i18n="aboutTitle">Servicios remotos para equipos técnicos en Brasil, España y Europa.</h2>
+        </div>
+        <div class="about-copy">
+          <p data-i18n="aboutTextOne">Inventando Soluções opera como proveedor técnico para empresas que necesitan apoyo en diseño mecánico, CAD, fabricación, máquinas industriales y automatización.</p>
+          <p data-i18n="aboutTextTwo">Dirigido por Luis Peña, proyectista mecánico y programador técnico. El trabajo combina criterio de taller, campo, CAD y software para entregar modelos editables, documentación clara y mejoras de procesos técnicos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botones placeholder listos para reemplazar por enlaces reales. -->
+    <section class="section-band contact-band" id="contacto">
+      <div class="container contact-grid">
+        <div class="section-heading left">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contacto</p>
+          <h2 data-i18n="contactTitle">Hablemos del próximo reto técnico de tu empresa.</h2>
+          <p data-i18n="contactText">Cuéntame si necesitas desarrollar un equipo, ordenar documentación técnica, mejorar un diseño existente, apoyar una máquina industrial o automatizar un flujo de trabajo. Atención remota para Brasil, España y Europa.</p>
+        </div>
+        <div class="contact-actions" aria-label="Opciones de contacto">
+          <a class="contact-button" href="#" aria-disabled="true">
+            <span>WhatsApp</span>
+            <small data-i18n="contactPlaceholder">Placeholder</small>
+          </a>
+          <a class="contact-button" href="#" aria-disabled="true">
+            <span>Email</span>
+            <small data-i18n="contactPlaceholder">Placeholder</small>
+          </a>
+          <a class="contact-button" href="#" aria-disabled="true">
+            <span>LinkedIn</span>
+            <small data-i18n="contactPlaceholder">Placeholder</small>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Inventando Soluções</span>
+      <span data-i18n="footerText">Mapirenet.uk es la presencia digital para atención remota en Brasil, España y Europa.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
