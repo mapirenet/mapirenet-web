@@ -362,12 +362,17 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
-const brandHomeLink = document.querySelector('.brand[href="#top"]');
+const brandHomeLink = document.querySelector(".brand");
 if (brandHomeLink) {
   brandHomeLink.addEventListener("click", (event) => {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    history.replaceState(null, "", window.location.pathname);
+    const targetUrl = new URL(brandHomeLink.href, window.location.href);
+    const isHomePage = window.location.pathname === "/" || window.location.pathname.endsWith("/index.html");
+
+    if (targetUrl.pathname === "/" && isHomePage) {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      history.replaceState(null, "", "/");
+    }
   });
 }
 
