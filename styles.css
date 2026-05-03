@@ -570,9 +570,9 @@ h3 {
 }
 
 #animaciones .video-grid {
-  width: min(460px, calc(100% - 40px));
-  max-width: 460px;
-  grid-template-columns: 1fr;
+  width: min(760px, calc(100% - 40px));
+  max-width: 760px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 #animaciones .video-frame {
@@ -967,6 +967,11 @@ h3 {
   .detail-grid,
   .link-grid,
   .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #animaciones .video-grid {
+    width: min(460px, calc(100% - 28px));
     grid-template-columns: 1fr;
   }
 
