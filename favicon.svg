@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Inventando Solucoes">
+  <rect width="64" height="64" rx="8" fill="#122033"/>
+  <path d="M14 46V18h8v28h-8Zm16 0V18h20v7H38v4h11v7H38v10h-8Z" fill="#ffffff"/>
+  <path d="M14 14h36v4H14v-4Zm0 36h36v4H14v-4Z" fill="#e5752a"/>
+</svg>
