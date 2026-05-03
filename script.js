@@ -7,9 +7,10 @@ const translations = {
     navTech: "Tecnologías",
     navAbout: "Empresa",
     navContact: "Contacto",
+    learnMore: "Ver servicio",
     heroEyebrow: "España · Europa · Brasil",
-    heroTitle: "Servicios técnicos de diseño mecánico, CAD 3D y automatización técnica",
-    heroCopy: "Inventando Soluções ofrece soporte remoto B2B para modelado 3D, modelos CAD editables, revisión de archivos SolidWorks y otros formatos CAD, planos técnicos, documentación para fabricación, soporte a máquinas industriales y automatización de tareas técnicas repetitivas con Python, sensores y sistemas conectados.",
+    heroTitle: "Diseño mecánico, modelado CAD 3D y documentación técnica para proyectos listos para fabricación",
+    heroCopy: "Inventando Soluções ofrece soporte remoto B2B para modelado 3D, modelos CAD editables, revisión de archivos de plataformas CAD profesionales, planos técnicos, documentación para fabricación, soporte a máquinas industriales y automatización de tareas técnicas repetitivas con Python, sensores y sistemas conectados.",
     heroPrimary: "Solicitar consulta",
     heroSecondary: "Ver aplicaciones",
     heroPanelTop: "Especialidad",
@@ -24,7 +25,7 @@ const translations = {
     servicesEyebrow: "Servicios",
     servicesTitle: "Servicios técnicos para diseño mecánico, CAD, fabricación y automatización.",
     serviceOneTitle: "Diseño mecánico fabricable en software CAD 3D",
-    serviceOneText: "Diseño mecánico orientado a fabricación, con piezas, ensamblajes y modelos CAD paramétricos, incluyendo revisión y mejora de archivos SolidWorks cuando el proyecto lo requiere.",
+    serviceOneText: "Diseño mecánico orientado a fabricación, con piezas, ensamblajes y modelos CAD paramétricos, incluyendo revisión y mejora de archivos de software CAD 3D cuando el proyecto lo requiere.",
     serviceTwoTitle: "Maquinaria agrícola e industrial",
     serviceTwoText: "Desarrollo de mecanismos, estructuras y subconjuntos para equipos de trabajo exigente en campo, taller o planta.",
     serviceThreeTitle: "Planos de fabricación y documentación técnica",
@@ -33,6 +34,14 @@ const translations = {
     serviceFourText: "Scripts, plantillas y flujos de trabajo para automatizar tareas repetitivas, generar datos y mejorar consistencia técnica.",
     serviceFiveTitle: "Revisión, mejora y reducción de retrabajo",
     serviceFiveText: "Análisis de diseños existentes, mejora de fabricabilidad, estandarización de archivos y soporte técnico para decisiones de diseño y producción.",
+    videoEyebrow: "Animaciones técnicas",
+    videoTitle: "Animaciones técnicas y vistas previas de modelos 3D",
+    videoText: "Espacio preparado para mostrar visualizaciones neutras de mecanismos, componentes y modelos CAD 3D sin nombres de clientes ni proyectos confidenciales.",
+    videoOneTitle: "Vista previa de componente CAD 3D paramétrico",
+    videoOneText: "Visualización preparada para revisión de diseño, comunicación técnica y documentación.",
+    videoTwoTitle: "Estudio de movimiento de ensamblaje mecánico",
+    videoTwoText: "Animación técnica para revisar funcionamiento, interferencias y secuencias de montaje.",
+    videoCta: "Ver aplicaciones y demos",
     processEyebrow: "Cómo trabajamos",
     processTitle: "Un flujo claro para transformar problemas técnicos en entregables útiles.",
     processOneTitle: "Análisis del problema técnico",
@@ -101,9 +110,10 @@ const translations = {
     navTech: "Technologies",
     navAbout: "Company",
     navContact: "Contact",
+    learnMore: "View service",
     heroEyebrow: "Spain · Europe · Brazil",
-    heroTitle: "Technical services for mechanical design, 3D CAD and technical automation",
-    heroCopy: "Inventando Soluções provides remote B2B support for 3D modeling, editable CAD models, review of SolidWorks files and other CAD formats, technical drawings, documentation for manufacturing, industrial machine support and automation of repetitive technical tasks with Python, sensors and connected systems.",
+    heroTitle: "Mechanical design, 3D CAD modeling and technical documentation for manufacturing-ready projects",
+    heroCopy: "Inventando Soluções provides remote B2B support for 3D modeling, editable CAD models, review of files from professional CAD platforms, technical drawings, documentation for manufacturing, industrial machine support and automation of repetitive technical tasks with Python, sensors and connected systems.",
     heroPrimary: "Request a consultation",
     heroSecondary: "View applications",
     heroPanelTop: "Specialty",
@@ -118,7 +128,7 @@ const translations = {
     servicesEyebrow: "Services",
     servicesTitle: "Technical services for mechanical design, CAD, manufacturing and automation.",
     serviceOneTitle: "Manufacturable mechanical design in 3D CAD software",
-    serviceOneText: "Mechanical design oriented to manufacturing, with parts, assemblies and parametric CAD models, including review and improvement of SolidWorks files when the project requires it.",
+    serviceOneText: "Mechanical design oriented to manufacturing, with parts, assemblies and parametric CAD models, including review and improvement of 3D CAD software files when the project requires it.",
     serviceTwoTitle: "Agricultural and industrial machinery",
     serviceTwoText: "Development of mechanisms, structures and subassemblies for demanding equipment in the field, workshop or plant.",
     serviceThreeTitle: "Manufacturing drawings and technical documentation",
@@ -127,6 +137,14 @@ const translations = {
     serviceFourText: "Scripts, templates and workflows to automate repetitive tasks, generate data and improve technical consistency.",
     serviceFiveTitle: "Design review, improvement and rework reduction",
     serviceFiveText: "Analysis of existing designs, manufacturability improvement, file standardization and technical support for design and production decisions.",
+    videoEyebrow: "Technical animations",
+    videoTitle: "Technical Animations & 3D Model Previews",
+    videoText: "A prepared space for neutral visualizations of mechanisms, components and 3D CAD models without client names or confidential project details.",
+    videoOneTitle: "Parametric 3D component preview",
+    videoOneText: "Visualization prepared for design review, technical communication and documentation.",
+    videoTwoTitle: "Mechanical assembly motion study",
+    videoTwoText: "Technical animation for reviewing function, interference and assembly sequences.",
+    videoCta: "View applications and demos",
     processEyebrow: "How we work",
     processTitle: "A clear workflow to turn technical problems into useful deliverables.",
     processOneTitle: "Technical problem analysis",
@@ -195,9 +213,10 @@ const translations = {
     navTech: "Tecnologias",
     navAbout: "Empresa",
     navContact: "Contato",
+    learnMore: "Ver serviço",
     heroEyebrow: "Espanha · Europa · Brasil",
-    heroTitle: "Serviços técnicos de projeto mecânico, CAD 3D e automação técnica",
-    heroCopy: "Inventando Soluções oferece suporte remoto B2B para modelagem 3D, modelos CAD editáveis, revisão de arquivos SolidWorks e outros formatos CAD, desenhos técnicos, documentação para fabricação, suporte a máquinas industriais e automação de tarefas técnicas repetitivas com Python, sensores e sistemas conectados.",
+    heroTitle: "Projeto mecânico, modelagem CAD 3D e documentação técnica para projetos prontos para fabricação",
+    heroCopy: "Inventando Soluções oferece suporte remoto B2B para modelagem 3D, modelos CAD editáveis, revisão de arquivos de plataformas CAD profissionais, desenhos técnicos, documentação para fabricação, suporte a máquinas industriais e automação de tarefas técnicas repetitivas com Python, sensores e sistemas conectados.",
     heroPrimary: "Solicitar consulta",
     heroSecondary: "Ver aplicações",
     heroPanelTop: "Especialidade",
@@ -212,7 +231,7 @@ const translations = {
     servicesEyebrow: "Serviços",
     servicesTitle: "Serviços técnicos para projeto mecânico, CAD, fabricação e automação.",
     serviceOneTitle: "Projeto mecânico fabricável em software CAD 3D",
-    serviceOneText: "Projeto mecânico orientado à fabricação, com peças, montagens e modelos CAD paramétricos, incluindo revisão e melhoria de arquivos SolidWorks quando o projeto exige.",
+    serviceOneText: "Projeto mecânico orientado à fabricação, com peças, montagens e modelos CAD paramétricos, incluindo revisão e melhoria de arquivos de software CAD 3D quando o projeto exige.",
     serviceTwoTitle: "Máquinas agrícolas e industriais",
     serviceTwoText: "Desenvolvimento de mecanismos, estruturas e subconjuntos para equipamentos exigentes em campo, oficina ou fábrica.",
     serviceThreeTitle: "Desenhos de fabricação e documentação técnica",
@@ -221,6 +240,14 @@ const translations = {
     serviceFourText: "Scripts, modelos e fluxos de trabalho para automatizar tarefas repetitivas, gerar dados e melhorar a consistência técnica.",
     serviceFiveTitle: "Revisão, melhoria e redução de retrabalho",
     serviceFiveText: "Análise de projetos existentes, melhoria de fabricabilidade, padronização de arquivos e suporte técnico para decisões de projeto e produção.",
+    videoEyebrow: "Animações técnicas",
+    videoTitle: "Animações técnicas e prévias de modelos 3D",
+    videoText: "Espaço preparado para mostrar visualizações neutras de mecanismos, componentes e modelos CAD 3D sem nomes de clientes ou detalhes confidenciais.",
+    videoOneTitle: "Prévia de componente CAD 3D paramétrico",
+    videoOneText: "Visualização preparada para revisão de projeto, comunicação técnica e documentação.",
+    videoTwoTitle: "Estudo de movimento de montagem mecânica",
+    videoTwoText: "Animação técnica para revisar funcionamento, interferências e sequências de montagem.",
+    videoCta: "Ver aplicações e demos",
     processEyebrow: "Como trabalhamos",
     processTitle: "Um fluxo claro para transformar problemas técnicos em entregas úteis.",
     processOneTitle: "Análise do problema técnico",
@@ -287,15 +314,27 @@ const languageButtons = document.querySelectorAll(".lang-button");
 const translatableElements = document.querySelectorAll("[data-i18n]");
 const menuToggle = document.querySelector(".menu-toggle");
 const navPanel = document.querySelector("#navPanel");
+const originalTextByKey = {};
+
+translatableElements.forEach((element) => {
+  if (!originalTextByKey[element.dataset.i18n]) {
+    originalTextByKey[element.dataset.i18n] = element.textContent;
+  }
+});
 
 // Cambia solo los textos marcados con data-i18n; la versión base del HTML queda en español.
 function setLanguage(language) {
-  const dictionary = translations[language] || translations.es;
+  const dictionary = {
+    ...(translations[language] || translations.es),
+    ...((window.pageTranslations && window.pageTranslations[language]) || {})
+  };
 
   translatableElements.forEach((element) => {
     const key = element.dataset.i18n;
     if (dictionary[key]) {
       element.textContent = dictionary[key];
+    } else if (originalTextByKey[key]) {
+      element.textContent = originalTextByKey[key];
     }
   });
 
@@ -324,11 +363,15 @@ navPanel.querySelectorAll("a").forEach((link) => {
 });
 
 const canvas = document.querySelector("#technicalCanvas");
-const ctx = canvas.getContext("2d");
+const ctx = canvas ? canvas.getContext("2d") : null;
 let animationFrame = 0;
 
 // Ajusta el canvas al tamaño real de pantalla para que se vea nítido en pantallas HiDPI.
 function resizeCanvas() {
+  if (!canvas || !ctx) {
+    return;
+  }
+
   const ratio = window.devicePixelRatio || 1;
   canvas.width = Math.floor(canvas.offsetWidth * ratio);
   canvas.height = Math.floor(canvas.offsetHeight * ratio);
@@ -336,6 +379,10 @@ function resizeCanvas() {
 }
 
 function drawTechnicalScene() {
+  if (!canvas || !ctx) {
+    return;
+  }
+
   const width = canvas.offsetWidth;
   const height = canvas.offsetHeight;
   const centerX = width * 0.72;
@@ -437,5 +484,7 @@ function drawDimensionLines(centerX, centerY, width, height) {
 }
 
 window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
-drawTechnicalScene();
+if (canvas && ctx) {
+  resizeCanvas();
+  drawTechnicalScene();
+}
