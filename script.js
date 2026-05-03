@@ -362,6 +362,15 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
+const brandHomeLink = document.querySelector('.brand[href="#top"]');
+if (brandHomeLink) {
+  brandHomeLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    history.replaceState(null, "", window.location.pathname);
+  });
+}
+
 menuToggle.addEventListener("click", () => {
   const isOpen = navPanel.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
