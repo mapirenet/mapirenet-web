@@ -60,7 +60,7 @@ const translations = {
     benefitTwo: "Documentación más clara para fabricación, montaje y proveedores.",
     benefitThree: "Modelos CAD editables, organizados y preparados para cambios futuros.",
     benefitFour: "Mejor comunicación con taller, proveedor o equipo técnico interno.",
-    benefitFive: "Soporte remoto para empresas en Brasil, España y Europa.",
+    benefitFive: "Soporte remoto para empresas en España, Europa y Brasil.",
     projectsEyebrow: "Aplicaciones técnicas",
     projectsTitle: "Experiencia aplicada en equipos fabricables, soporte a máquinas y automatización técnica.",
     projectOneLabel: "Maquinaria agrícola",
@@ -98,13 +98,13 @@ const translations = {
     techLabelDocs: "Documentación técnica",
     compatNote: "Menciones de software solo indican compatibilidad con archivos y flujos de trabajo habituales. Inventando Soluções no está afiliada a esas marcas.",
     aboutEyebrow: "Empresa",
-    aboutTitle: "Servicios remotos para equipos técnicos en Brasil, España y Europa.",
+    aboutTitle: "Servicios remotos para equipos técnicos en España, Europa y Brasil.",
     aboutTextOne: "Inventando Soluções opera como proveedor técnico para empresas que necesitan apoyo en diseño mecánico, CAD, fabricación, máquinas industriales y automatización.",
     aboutTextTwo: "Dirigido por Luis Pena, proyectista mecánico y programador técnico. El trabajo combina criterio de taller, campo, CAD y software para entregar modelos editables, documentación clara y mejoras de procesos técnicos.",
     contactEyebrow: "Contacto",
     contactTitle: "Hablemos del próximo reto técnico de tu empresa.",
     contactText: "Contacta con Inventando Soluções para desarrollar equipos, ordenar documentación técnica, mejorar diseños existentes, apoyar máquinas industriales o automatizar flujos de trabajo. Atención remota para España, Europa y Brasil.",
-    footerText: "Mapirenet.uk es la presencia digital para atención remota en Brasil, España y Europa."
+    footerText: "Mapirenet.uk es la presencia digital para atención remota en España, Europa y Brasil."
   },
   en: {
     brandTag: "Technical services for design, CAD and automation",
@@ -167,7 +167,7 @@ const translations = {
     benefitTwo: "Clearer documentation for manufacturing, assembly and suppliers.",
     benefitThree: "Editable, organized CAD models prepared for future changes.",
     benefitFour: "Better communication with workshop, supplier or internal technical team.",
-    benefitFive: "Remote support for companies in Brazil, Spain and Europe.",
+    benefitFive: "Remote support for companies in Spain, Europe and Brazil.",
     projectsEyebrow: "Technical applications",
     projectsTitle: "Applied experience in manufacturable equipment, machine support and technical automation.",
     projectOneLabel: "Agricultural machinery",
@@ -205,13 +205,13 @@ const translations = {
     techLabelDocs: "Technical documentation",
     compatNote: "Software names only indicate compatibility with common file types and workflows. Inventando Soluções is not affiliated with those brands.",
     aboutEyebrow: "Company",
-    aboutTitle: "Remote services for technical teams in Brazil, Spain and Europe.",
+    aboutTitle: "Remote services for technical teams in Spain, Europe and Brazil.",
     aboutTextOne: "Inventando Soluções operates as a technical provider for companies that need support in mechanical design, CAD, manufacturing, industrial machines and automation.",
     aboutTextTwo: "Led by Luis Pena, mechanical designer and technical programmer. The work combines workshop, field, CAD and software judgment to deliver editable models, clear documentation and technical process improvements.",
     contactEyebrow: "Contact",
     contactTitle: "Let's discuss your company's next technical challenge.",
     contactText: "Contact Inventando Soluções to develop equipment, organize technical documentation, improve existing designs, support industrial machines or automate workflows. Remote support for Spain, Europe and Brazil.",
-    footerText: "Mapirenet.uk is the digital presence for remote support in Brazil, Spain and Europe."
+    footerText: "Mapirenet.uk is the digital presence for remote support in Spain, Europe and Brazil."
   },
   pt: {
     brandTag: "Serviços técnicos para projeto, CAD e automação",
@@ -274,7 +274,7 @@ const translations = {
     benefitTwo: "Documentação mais clara para fabricação, montagem e fornecedores.",
     benefitThree: "Modelos CAD editáveis, organizados e preparados para mudanças futuras.",
     benefitFour: "Melhor comunicação com oficina, fornecedor ou equipe técnica interna.",
-    benefitFive: "Suporte remoto para empresas no Brasil, Espanha e Europa.",
+    benefitFive: "Suporte remoto para empresas na Espanha, Europa e Brasil.",
     projectsEyebrow: "Aplicações técnicas",
     projectsTitle: "Experiência aplicada em equipamentos fabricáveis, suporte a máquinas e automação técnica.",
     projectOneLabel: "Máquinas agrícolas",
@@ -312,13 +312,13 @@ const translations = {
     techLabelDocs: "Documentação técnica",
     compatNote: "Menções de software indicam apenas compatibilidade com arquivos e fluxos de trabalho comuns. A Inventando Soluções não é afiliada a essas marcas.",
     aboutEyebrow: "Empresa",
-    aboutTitle: "Serviços remotos para equipes técnicas no Brasil, Espanha e Europa.",
+    aboutTitle: "Serviços remotos para equipes técnicas na Espanha, Europa e Brasil.",
     aboutTextOne: "Inventando Soluções atua como fornecedor técnico para empresas que precisam de apoio em projeto mecânico, CAD, fabricação, máquinas industriais e automação.",
     aboutTextTwo: "Dirigida por Luis Pena, projetista mecânico e programador técnico. O trabalho combina critério de oficina, campo, CAD e software para entregar modelos editáveis, documentação clara e melhorias de processos técnicos.",
     contactEyebrow: "Contato",
     contactTitle: "Vamos falar sobre o próximo desafio técnico da sua empresa.",
     contactText: "Entre em contato com a Inventando Soluções para desenvolver equipamentos, organizar documentação técnica, melhorar projetos existentes, apoiar máquinas industriais ou automatizar fluxos de trabalho. Atendimento remoto para Espanha, Europa e Brasil.",
-    footerText: "Mapirenet.uk é a presença digital para atendimento remoto no Brasil, Espanha e Europa."
+    footerText: "Mapirenet.uk é a presença digital para atendimento remoto na Espanha, Europa e Brasil."
   }
 };
 
