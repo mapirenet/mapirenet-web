@@ -539,12 +539,19 @@ h3 {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 18px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.video-card {
+  padding: 16px;
 }
 
 .video-frame {
   aspect-ratio: 16 / 9;
+  max-height: 340px;
   margin-bottom: 18px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -558,7 +565,8 @@ h3 {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #eef3f7;
 }
 
 .section-cta {
