@@ -117,30 +117,31 @@ a {
 
 .language-switcher {
   display: inline-flex;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.04);
+  align-items: center;
+  gap: 8px;
 }
 
 .lang-button {
-  min-width: 46px;
-  height: 34px;
+  width: 36px;
+  height: 32px;
   border: 0;
-  border-right: 1px solid var(--line);
   background: transparent;
-  color: var(--muted);
   cursor: pointer;
-  font-size: 1.08rem;
+  font-size: 1.16rem;
   line-height: 1;
-  font-weight: 700;
-}
-
-.lang-button:last-child {
-  border-right: 0;
+  opacity: 0.62;
+  border-radius: 999px;
+  transition: opacity 180ms ease, background 180ms ease, transform 180ms ease;
 }
 
 .lang-button.active {
-  background: var(--blue);
-  color: #ffffff;
+  background: rgba(30, 111, 168, 0.18);
+  opacity: 1;
+}
+
+.lang-button:hover {
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 .menu-toggle {
