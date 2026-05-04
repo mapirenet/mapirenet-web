@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFP1CF1ZLQ"></script>
+  <!-- Google Consent Mode -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-NFP1CF1ZLQ');
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +26,7 @@
   <meta property="og:site_name" content="Inventando Soluções">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../styles.css?v=20260503-logo">
+  <link rel="stylesheet" href="../styles.css?v=20260504-cookies">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -166,6 +168,6 @@
       }
     };
   </script>
-  <script src="../script.js"></script>
+  <script src="../script.js?v=20260504-cookies"></script>
 </body>
 </html>

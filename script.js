@@ -327,6 +327,214 @@ const translatableElements = document.querySelectorAll("[data-i18n]");
 const menuToggle = document.querySelector(".menu-toggle");
 const navPanel = document.querySelector("#navPanel");
 const originalTextByKey = {};
+const GA_MEASUREMENT_ID = "G-NFP1CF1ZLQ";
+const COOKIE_CONSENT_KEY = "mapirenetCookieConsent";
+
+function loadGoogleAnalytics() {
+  if (window.mapirenetAnalyticsLoaded) {
+    return;
+  }
+
+  window.mapirenetAnalyticsLoaded = true;
+  const analyticsScript = document.createElement("script");
+  analyticsScript.async = true;
+  analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  document.head.appendChild(analyticsScript);
+
+  window.gtag("js", new Date());
+  window.gtag("config", GA_MEASUREMENT_ID);
+}
+
+function updateConsent(analyticsGranted) {
+  window.gtag("consent", "update", {
+    analytics_storage: analyticsGranted ? "granted" : "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied"
+  });
+
+  if (analyticsGranted) {
+    loadGoogleAnalytics();
+  } else {
+    clearAnalyticsCookies();
+  }
+}
+
+function clearAnalyticsCookies() {
+  document.cookie.split(";").forEach((cookie) => {
+    const name = cookie.split("=")[0].trim();
+
+    if (name === "_ga" || name.startsWith("_ga_") || name === "_gid" || name === "_gat") {
+      [
+        "",
+        `; domain=${window.location.hostname}`,
+        "; domain=.mapirenet.uk"
+      ].forEach((domain) => {
+        document.cookie = `${name}=; Max-Age=0; path=/${domain}; SameSite=Lax`;
+      });
+    }
+  });
+}
+
+function getStoredCookieConsent() {
+  try {
+    return JSON.parse(localStorage.getItem(COOKIE_CONSENT_KEY));
+  } catch (error) {
+    return null;
+  }
+}
+
+function saveCookieConsent(analyticsGranted) {
+  const consent = {
+    analytics: analyticsGranted,
+    updatedAt: new Date().toISOString()
+  };
+
+  localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify(consent));
+  updateConsent(analyticsGranted);
+}
+
+function closeCookiePanel() {
+  const panel = document.querySelector(".cookie-consent");
+  const modal = document.querySelector(".cookie-modal");
+
+  if (panel) {
+    panel.hidden = true;
+  }
+
+  if (modal) {
+    modal.hidden = true;
+  }
+}
+
+function openCookieSettings() {
+  const modal = document.querySelector(".cookie-modal");
+  const analyticsInput = document.querySelector("#cookieAnalytics");
+  const storedConsent = getStoredCookieConsent();
+
+  if (analyticsInput) {
+    analyticsInput.checked = Boolean(storedConsent && storedConsent.analytics);
+  }
+
+  if (modal) {
+    modal.hidden = false;
+  }
+}
+
+function addFooterPrivacyLinks() {
+  document.querySelectorAll(".footer-inner").forEach((footer) => {
+    if (footer.querySelector(".footer-privacy-links")) {
+      return;
+    }
+
+    const links = document.createElement("nav");
+    links.className = "footer-privacy-links";
+    links.setAttribute("aria-label", "Privacidad");
+    links.innerHTML = `
+      <a href="/privacy-policy/">Política de privacidad</a>
+      <a href="/cookie-policy/">Política de cookies</a>
+      <button type="button" data-cookie-settings>Configurar cookies</button>
+    `;
+    footer.appendChild(links);
+  });
+}
+
+function buildCookieConsentUi() {
+  if (document.querySelector(".cookie-consent")) {
+    return;
+  }
+
+  const banner = document.createElement("section");
+  banner.className = "cookie-consent";
+  banner.setAttribute("aria-label", "Preferencias de cookies");
+  banner.innerHTML = `
+    <div class="cookie-consent__text">
+      <strong>Privacidad y cookies</strong>
+      <p>Usamos cookies propias y de terceros para medir el uso del sitio y mejorar nuestros servicios. Puedes aceptar, rechazar o configurar tus preferencias.</p>
+    </div>
+    <div class="cookie-consent__actions">
+      <button class="cookie-button" type="button" data-cookie-reject>Rechazar</button>
+      <button class="cookie-button" type="button" data-cookie-configure>Configurar</button>
+      <button class="cookie-button" type="button" data-cookie-accept>Aceptar</button>
+    </div>
+  `;
+
+  const modal = document.createElement("section");
+  modal.className = "cookie-modal";
+  modal.hidden = true;
+  modal.setAttribute("aria-label", "Configurar cookies");
+  modal.innerHTML = `
+    <div class="cookie-modal__panel">
+      <div>
+        <strong>Configurar cookies</strong>
+        <p>Las cookies técnicas necesarias se usan para guardar tu preferencia. Las cookies de analítica ayudan a medir el uso del sitio con Google Analytics.</p>
+      </div>
+      <label class="cookie-option">
+        <input id="cookieAnalytics" type="checkbox">
+        <span>Permitir cookies de analítica</span>
+      </label>
+      <div class="cookie-consent__actions">
+        <button class="cookie-button" type="button" data-cookie-save>Guardar preferencias</button>
+        <button class="cookie-button" type="button" data-cookie-close>Cerrar</button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(banner);
+  document.body.appendChild(modal);
+
+  const storedConsent = getStoredCookieConsent();
+  if (storedConsent) {
+    banner.hidden = true;
+    updateConsent(Boolean(storedConsent.analytics));
+  }
+}
+
+function initCookieConsent() {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  addFooterPrivacyLinks();
+  buildCookieConsentUi();
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+
+    if (!(target instanceof HTMLElement)) {
+      return;
+    }
+
+    if (target.matches("[data-cookie-accept]")) {
+      saveCookieConsent(true);
+      closeCookiePanel();
+    }
+
+    if (target.matches("[data-cookie-reject]")) {
+      saveCookieConsent(false);
+      closeCookiePanel();
+    }
+
+    if (target.matches("[data-cookie-configure], [data-cookie-settings]")) {
+      openCookieSettings();
+    }
+
+    if (target.matches("[data-cookie-save]")) {
+      const analyticsInput = document.querySelector("#cookieAnalytics");
+      saveCookieConsent(Boolean(analyticsInput && analyticsInput.checked));
+      closeCookiePanel();
+    }
+
+    if (target.matches("[data-cookie-close]")) {
+      const modal = document.querySelector(".cookie-modal");
+      if (modal) {
+        modal.hidden = true;
+      }
+    }
+  });
+}
+
+initCookieConsent();
 
 translatableElements.forEach((element) => {
   if (!originalTextByKey[element.dataset.i18n]) {
@@ -376,17 +584,19 @@ if (brandHomeLink) {
   });
 }
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = navPanel.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-});
-
-navPanel.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navPanel.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
+if (menuToggle && navPanel) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navPanel.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
-});
+
+  navPanel.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navPanel.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
 
 const projectsLink = document.querySelector('[data-i18n="navProjects"]');
 if (projectsLink) {
