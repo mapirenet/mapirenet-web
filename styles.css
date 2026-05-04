@@ -122,13 +122,15 @@ a {
 }
 
 .lang-button {
-  min-width: 42px;
+  min-width: 46px;
   height: 34px;
   border: 0;
   border-right: 1px solid var(--line);
   background: transparent;
   color: var(--muted);
   cursor: pointer;
+  font-size: 1.08rem;
+  line-height: 1;
   font-weight: 700;
 }
 
