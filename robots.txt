@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mapirenet.uk/sitemap.xml
+Sitemap: https://mapirenet.uk/sitemap.xml
